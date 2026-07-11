@@ -6,43 +6,7 @@ import { FaUserTie, FaClock, FaCertificate, FaArrowRight, FaHandshake, FaBuildin
 
 const CoursesPage = () => {
   const courses = [
-    // ========== EXISTING TRAINING COURSES ==========
-    {
-      title: "Pre-License Training - General Insurance (25 hrs)",
-      description: "25 Hrs Training Programme is a mandatory Pre-Licensing training programme for those seeking license for the first time. Covers different aspects of General Insurance & the business as a whole.",
-      icon: <FaUserTie className="text-blue-600 text-2xl" />,
-      type: "pre-license",
-      category: "general"
-    },
-    {
-      title: "Pre-License Training - Life Insurance (25 hrs)",
-      description: "Mandatory training for first-time license seekers. Provides full exposure to Life Insurance concepts and business practices.",
-      icon: <FaUserTie className="text-blue-600 text-2xl" />,
-      type: "pre-license",
-      category: "life"
-    },
-    {
-      title: "License Renewal - Life Insurance (25 hrs)",
-      description: "Required every 3 years to continue working as an agent. Completion makes you eligible for license renewal for another 3 years.",
-      icon: <FaCertificate className="text-green-600 text-2xl" />,
-      type: "renewal",
-      category: "life"
-    },
-    {
-      title: "Pre-License Training - Health Insurance (25 hrs)",
-      description: "Mandatory training covering all aspects of Health Insurance for first-time license seekers.",
-      icon: <FaUserTie className="text-blue-600 text-2xl" />,
-      type: "pre-license",
-      category: "health"
-    },
-    {
-      title: "POSP Training (25 hrs)",
-      description: "Provides basic knowledge of Life, General and Health insurance to work as an insurance sales person.",
-      icon: <FaClock className="text-purple-600 text-2xl" />,
-      type: "posp",
-      category: "all"
-    },
-
+    
     // ========== NEW: GOVERNMENT PARTNERSHIPS & MOUs ==========
     {
       title: "MOU with RSLDC Under Project (2014-15)",
@@ -141,7 +105,45 @@ const CoursesPage = () => {
       icon: <FaAward className="text-green-700 text-2xl" />,
       type: "partnership",
       category: "government"
+    },
+
+    // ========== EXISTING TRAINING COURSES ==========
+    {
+      title: "Pre-License Training - General Insurance (25 hrs)",
+      description: "25 Hrs Training Programme is a mandatory Pre-Licensing training programme for those seeking license for the first time. Covers different aspects of General Insurance & the business as a whole.",
+      icon: <FaUserTie className="text-blue-600 text-2xl" />,
+      type: "pre-license",
+      category: "general"
+    },
+    {
+      title: "Pre-License Training - Life Insurance (25 hrs)",
+      description: "Mandatory training for first-time license seekers. Provides full exposure to Life Insurance concepts and business practices.",
+      icon: <FaUserTie className="text-blue-600 text-2xl" />,
+      type: "pre-license",
+      category: "life"
+    },
+    {
+      title: "License Renewal - Life Insurance (25 hrs)",
+      description: "Required every 3 years to continue working as an agent. Completion makes you eligible for license renewal for another 3 years.",
+      icon: <FaCertificate className="text-green-600 text-2xl" />,
+      type: "renewal",
+      category: "life"
+    },
+    {
+      title: "Pre-License Training - Health Insurance (25 hrs)",
+      description: "Mandatory training covering all aspects of Health Insurance for first-time license seekers.",
+      icon: <FaUserTie className="text-blue-600 text-2xl" />,
+      type: "pre-license",
+      category: "health"
+    },
+    {
+      title: "POSP Training (25 hrs)",
+      description: "Provides basic knowledge of Life, General and Health insurance to work as an insurance sales person.",
+      icon: <FaClock className="text-purple-600 text-2xl" />,
+      type: "posp",
+      category: "all"
     }
+
   ]
 
   const containerVariants = {
