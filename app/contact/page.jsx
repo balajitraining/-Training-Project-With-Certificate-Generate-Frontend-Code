@@ -90,7 +90,7 @@ const ContactPage = () => {
       ]
     },
     {
-      name: "Yashwant Kumar Gupta",
+      name: "Ranjan Kumar Sahoo",
       position: "Faculty (Full Time)",
       qualification: "ASSOCIATE (III)",
       icon: <GraduationCap className="text-purple-500" size={20} />,
@@ -101,7 +101,7 @@ const ContactPage = () => {
     {
       name: "Mamraj Choudhary",
       position: "Faculty (Full Time)",
-      qualification: "LICENTIATE (III)",
+      qualification: "FELLOW",
       icon: <BookOpen className="text-green-600" size={20} />,
       contacts: [
         { type: "phone", value: "9887899081", icon: <Phone size={16} /> }
