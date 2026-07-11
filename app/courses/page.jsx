@@ -14,100 +14,156 @@ const CoursesPage = () => {
       icon: <FaHandshake className="text-emerald-600 text-2xl" />,
       type: "partnership",
       category: "government",
-      hideTime: true  // ⬅️ This will hide time and clock icon
+      hideTime: true,
+      hideBadge: true,
+      hideYear: true,
+      hidePartner: true
     },
     {
       title: "MOU with RSLDC Under Project (2015-16)",
       description: "",
       icon: <FaHandshake className="text-emerald-600 text-2xl" />,
       type: "partnership",
-      category: "government"
+      category: "government",
+      hideTime: true,
+      hideBadge: true,
+      hideYear: true,
+      hidePartner: true
     },
     {
       title: "MOU with RKCL Under Project (2017-18)",
       description: "",
       icon: <FaBuilding className="text-indigo-600 text-2xl" />,
       type: "partnership",
-      category: "government"
+      category: "government",
+      hideTime: true,
+      hideBadge: true,
+      hideYear: true,
+      hidePartner: true
     },
     {
       title: "MOU with State PMKVY Rajasthan (2017-18)",
       description: "",
       icon: <FaUniversity className="text-red-600 text-2xl" />,
       type: "partnership",
-      category: "government"
+      category: "government",
+      hideTime: true,
+      hideBadge: true,
+      hideYear: true,
+      hidePartner: true
     },
     {
       title: "MOU with DDU-GKY Rajasthan (2018-19)",
       description: "",
       icon: <FaUsers className="text-orange-600 text-2xl" />,
       type: "partnership",
-      category: "government"
+      category: "government",
+      hideTime: true,
+      hideBadge: true,
+      hideYear: true,
+      hidePartner: true
     },
     {
       title: "MOU with MMYKY in Rajasthan (2019-20)",
       description: "",
       icon: <FaBriefcase className="text-pink-600 text-2xl" />,
       type: "partnership",
-      category: "government"
+      category: "government",
+      hideTime: true,
+      hideBadge: true,
+      hideYear: true,
+      hidePartner: true
     },
     {
       title: "MOU with RSLDC Under RSTP Project for Jail Inmates Training (2019-20)",
       description: "",
       icon: <FaAward className="text-purple-600 text-2xl" />,
       type: "partnership",
-      category: "government"
+      category: "government",
+      hideTime: true,
+      hideBadge: true,
+      hideYear: true,
+      hidePartner: true
     },
     {
       title: "Associated with TSSC (2018-19)",
       description: "",
       icon: <FaBuilding className="text-cyan-600 text-2xl" />,
       type: "partnership",
-      category: "corporate"
+      category: "corporate",
+      hideTime: true,
+      hideBadge: true,
+      hideYear: true,
+      hidePartner: true
     },
     {
       title: "ESDM with TSSC (2018-19)",
       description: "",
       icon: <FaFileContract className="text-blue-600 text-2xl" />,
       type: "partnership",
-      category: "corporate"
+      category: "corporate",
+      hideTime: true,
+      hideBadge: true,
+      hideYear: true,
+      hidePartner: true
     },
     {
       title: "RPL with TSSC (2018-19)",
       description: "",
       icon: <FaCertificate className="text-yellow-600 text-2xl" />,
       type: "partnership",
-      category: "corporate"
+      category: "corporate",
+      hideTime: true,
+      hideBadge: true,
+      hideYear: true,
+      hidePartner: true
     },
     {
       title: "NULM with TSSC (2019-20)",
       description: "",
       icon: <FaUsers className="text-teal-600 text-2xl" />,
       type: "partnership",
-      category: "government"
+      category: "government",
+      hideTime: true,
+      hideBadge: true,
+      hideYear: true,
+      hidePartner: true
     },
     {
       title: "MOU with RSLDC Under I AM SHAKTI Project Funded by MCD Govt. Of Rajasthan (2020-21)",
       description: "",
       icon: <FaHandshake className="text-rose-600 text-2xl" />,
       type: "partnership",
-      category: "government"
+      category: "government",
+      hideTime: true,
+      hideBadge: true,
+      hideYear: true,
+      hidePartner: true
     },
     {
       title: "Sanctioned Under JJM RPL RSLDC Funded by PHED Department, Govt. Of Rajasthan (2020-21)",
       description: "",
       icon: <FaUniversity className="text-blue-700 text-2xl" />,
       type: "partnership",
-      category: "government"
+      category: "government",
+      hideTime: true,
+      hideBadge: true,
+      hideYear: true,
+      hidePartner: true
     },
     {
       title: "Sanctioned RPL Under CSSM-PMKVY in Rajasthan (2020-21)",
       description: "",
       icon: <FaAward className="text-green-700 text-2xl" />,
       type: "partnership",
-      category: "government"
+      category: "government",
+      hideTime: true,
+      hideBadge: true,
+      hideYear: true,
+      hidePartner: true
     },
-     // ========== EXISTING TRAINING COURSES ==========
+    
+    // ========== EXISTING TRAINING COURSES ==========
     {
       title: "Pre-License Training - General Insurance (25 hrs)",
       description: "25 Hrs Training Programme is a mandatory Pre-Licensing training programme for those seeking license for the first time. Covers different aspects of General Insurance & the business as a whole.",
@@ -137,7 +193,7 @@ const CoursesPage = () => {
       category: "health"
     },
     {
-      title: "POSP Training (25 hrs)",
+      title: "POSP Training (15 hrs)",
       description: "Provides basic knowledge of Life, General and Health insurance to work as an insurance sales person.",
       icon: <FaClock className="text-purple-600 text-2xl" />,
       type: "posp",
@@ -203,30 +259,32 @@ const CoursesPage = () => {
                   }`}>
                     {course.icon}
                   </div>
-                  <span className={`inline-flex px-3 py-1 rounded-full text-xs font-semibold ${
-                    course.type === 'pre-license' ? 'bg-blue-100 text-blue-800' :
-                    course.type === 'renewal' ? 'bg-green-100 text-green-800' :
-                    course.type === 'posp' ? 'bg-purple-100 text-purple-800' :
-                    'bg-emerald-100 text-emerald-800'
-                  }`}>
-                    {course.type === 'pre-license' ? 'New License' :
-                     course.type === 'renewal' ? 'Renewal' :
-                     course.type === 'posp' ? 'POSP' :
-                     ''}  {/* ⬅️ Empty string for partnership */}
-                  </span>
+                  {/* Hide badge for partnerships */}
+                  {!course.hideBadge && (
+                    <span className={`inline-flex px-3 py-1 rounded-full text-xs font-semibold ${
+                      course.type === 'pre-license' ? 'bg-blue-100 text-blue-800' :
+                      course.type === 'renewal' ? 'bg-green-100 text-green-800' :
+                      course.type === 'posp' ? 'bg-purple-100 text-purple-800' :
+                      'bg-emerald-100 text-emerald-800'
+                    }`}>
+                      {course.type === 'pre-license' ? 'New License' :
+                       course.type === 'renewal' ? 'Renewal' :
+                       course.type === 'posp' ? 'POSP' :
+                       ''}
+                    </span>
+                  )}
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">{course.title}</h3>
-                {course.description && (
+                {/* Hide description for partnerships */}
+                {course.description && !course.hideBadge && (
                   <p className="text-gray-600 mb-4">{course.description}</p>
                 )}
-                {/* ⬅️ Hide time section if hideTime is true */}
-                {!course.hideTime && (
+                {/* Hide time section for partnerships */}
+                {!course.hideTime && course.type !== 'partnership' && (
                   <div className="flex items-center justify-between">
                     <span className="flex items-center text-sm text-gray-500">
                       <FaClock className="mr-1" />
-                      {course.title.includes('15') ? '15 hours' : 
-                       course.type === 'partnership' ? '' : 
-                       '25 hours'}
+                      {course.title.includes('15') ? '15 hours' : '25 hours'}
                     </span>
                   </div>
                 )}
