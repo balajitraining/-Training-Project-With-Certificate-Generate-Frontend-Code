@@ -185,7 +185,6 @@ const ContactPage = () => {
               </div>
 
 
-              <div className="space-y-6">
               <div className="flex items-start gap-4 p-4 hover:bg-gray-50 rounded-lg transition">
                 <div className="p-3 bg-blue-100 rounded-full text-blue-600">
                   <MapPin size={20} />
