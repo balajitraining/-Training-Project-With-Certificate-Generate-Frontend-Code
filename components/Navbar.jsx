@@ -51,7 +51,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', path: '/', icon: <Home size={20} /> },
-    { name: 'Courses', path: '/courses', icon: <FileText size={20} /> },
+    { name: 'Projects', path: '/courses', icon: <FileText size={20} /> },
     { name: 'About', path: '/about', icon: <Info size={20} /> },
     { name: 'Help', path: '/help', icon: <HelpCircle size={20} /> },
     { name: 'FAQs', path: '/faqs', icon: <FileText size={20} /> },
