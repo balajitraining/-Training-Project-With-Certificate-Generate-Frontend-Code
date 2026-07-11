@@ -191,7 +191,7 @@ const CoursesPage = () => {
         {/* Header */}
         <motion.div variants={itemVariants} className="text-center mb-12">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Insurance Training Programs & Partnerships
+            Training Programs & Partnerships
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Comprehensive training programs and strategic partnerships with government & corporate organizations
