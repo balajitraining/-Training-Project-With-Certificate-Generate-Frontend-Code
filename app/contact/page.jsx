@@ -95,7 +95,7 @@ const ContactPage = () => {
       qualification: "FELLOW (III)",
       icon: <GraduationCap className="text-purple-500" size={20} />,
       contacts: [
-        { type: "phone", value: "9828223331", icon: <Phone size={16} /> }
+        { type: "phone", value: "9348804670", icon: <Phone size={16} /> }
       ]
     },
     {
