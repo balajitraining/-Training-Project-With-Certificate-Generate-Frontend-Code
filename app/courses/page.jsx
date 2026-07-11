@@ -12,7 +12,7 @@ const CoursesPage = () => {
       title: "MOU with RSLDC Under Project (2014-15)",
       description: "",
       icon: <FaHandshake className="text-emerald-600 text-2xl" />,
-      type: "partnership",
+      type: "",
       category: "government"
     },
     {
@@ -223,7 +223,7 @@ const CoursesPage = () => {
                 <div className="flex items-center justify-between">
                   <span className="flex items-center text-sm text-gray-500">
                     <FaClock className="mr-1" />
-                    {course.title.includes('15') ? '15 hours' : 
+                    {course.title.includes('15') ? '' : 
                      course.type === 'partnership' ? 'Partnership' : 
                      '25 hours'}
                   </span>
