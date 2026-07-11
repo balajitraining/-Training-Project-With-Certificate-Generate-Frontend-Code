@@ -6,14 +6,15 @@ import { FaUserTie, FaClock, FaCertificate, FaArrowRight, FaHandshake, FaBuildin
 
 const CoursesPage = () => {
   const courses = [
-    
+
     // ========== NEW: GOVERNMENT PARTNERSHIPS & MOUs ==========
     {
       title: "MOU with RSLDC Under Project (2014-15)",
       description: "",
       icon: <FaHandshake className="text-emerald-600 text-2xl" />,
-      type: "",
-      category: "government"
+      type: "partnership",
+      category: "government",
+      hideTime: true  // ⬅️ This will hide time and clock icon
     },
     {
       title: "MOU with RSLDC Under Project (2015-16)",
@@ -106,8 +107,7 @@ const CoursesPage = () => {
       type: "partnership",
       category: "government"
     },
-
-    // ========== EXISTING TRAINING COURSES ==========
+     // ========== EXISTING TRAINING COURSES ==========
     {
       title: "Pre-License Training - General Insurance (25 hrs)",
       description: "25 Hrs Training Programme is a mandatory Pre-Licensing training programme for those seeking license for the first time. Covers different aspects of General Insurance & the business as a whole.",
@@ -143,7 +143,6 @@ const CoursesPage = () => {
       type: "posp",
       category: "all"
     }
-
   ]
 
   const containerVariants = {
@@ -213,21 +212,24 @@ const CoursesPage = () => {
                     {course.type === 'pre-license' ? 'New License' :
                      course.type === 'renewal' ? 'Renewal' :
                      course.type === 'posp' ? 'POSP' :
-                     'Partnership'}
+                     ''}  {/* ⬅️ Empty string for partnership */}
                   </span>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">{course.title}</h3>
                 {course.description && (
                   <p className="text-gray-600 mb-4">{course.description}</p>
                 )}
-                <div className="flex items-center justify-between">
-                  <span className="flex items-center text-sm text-gray-500">
-                    <FaClock className="mr-1" />
-                    {course.title.includes('15') ? '' : 
-                     course.type === 'partnership' ? 'Partnership' : 
-                     '25 hours'}
-                  </span>
-                </div>
+                {/* ⬅️ Hide time section if hideTime is true */}
+                {!course.hideTime && (
+                  <div className="flex items-center justify-between">
+                    <span className="flex items-center text-sm text-gray-500">
+                      <FaClock className="mr-1" />
+                      {course.title.includes('15') ? '15 hours' : 
+                       course.type === 'partnership' ? '' : 
+                       '25 hours'}
+                    </span>
+                  </div>
+                )}
               </div>
             </motion.div>
           ))}
