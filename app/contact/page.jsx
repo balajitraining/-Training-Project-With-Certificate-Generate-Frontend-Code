@@ -92,7 +92,7 @@ const ContactPage = () => {
     {
       name: "Ranjan Kumar Sahoo",
       position: "Faculty (Full Time)",
-      qualification: "ASSOCIATE (III)",
+      qualification: "FELLOW",
       icon: <GraduationCap className="text-purple-500" size={20} />,
       contacts: [
         { type: "phone", value: "9828223331", icon: <Phone size={16} /> }
