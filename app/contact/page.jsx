@@ -68,7 +68,9 @@ const ContactPage = () => {
       position: "Chairman",
       company: "Balaji Group",
       icon: <Crown className="text-yellow-500" size={20} />,
-      contacts: []
+      contacts: [
+         { type: "email", value: "incharge.balajingo@gmail.com", icon: <Mail size={16} /> }
+      ]
     },
     {
       name: "Suresh Kumar Mahawar",
