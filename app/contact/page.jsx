@@ -69,7 +69,7 @@ const ContactPage = () => {
       company: "Balaji Group",
       icon: <Crown className="text-yellow-500" size={20} />,
       contacts: [
-         { type: "email", value: "incharge.balajingo@gmail.com", icon: <Mail size={16} /> }
+         { type: "email", value: "balajingo@gmail.com", icon: <Mail size={16} /> }
       ]
     },
     {
@@ -92,7 +92,7 @@ const ContactPage = () => {
     {
       name: "Ranjan Kumar Sahoo",
       position: "Faculty (Full Time)",
-      qualification: "FELLOW",
+      qualification: "FELLOW (III)",
       icon: <GraduationCap className="text-purple-500" size={20} />,
       contacts: [
         { type: "phone", value: "9828223331", icon: <Phone size={16} /> }
@@ -101,7 +101,7 @@ const ContactPage = () => {
     {
       name: "Mamraj Choudhary",
       position: "Faculty (Full Time)",
-      qualification: "FELLOW",
+      qualification: "LICENTIATE (III)",
       icon: <BookOpen className="text-green-600" size={20} />,
       contacts: [
         { type: "phone", value: "9887899081", icon: <Phone size={16} /> }
@@ -178,7 +178,7 @@ const ContactPage = () => {
                   <h3 className="text-lg font-medium text-gray-800 mb-1">Head Office Address</h3>
                   <p className="text-gray-600">
                     Balaji Shikshan Sansthan Samiti<br />
-                    523 Mansarovar, Jaipur<br />
+                    523 , 5th Floor, Mansarovar Plaza, Mansarovar, Jaipur<br />
                     Rajasthan - 302020
                   </p>
                 </div>
