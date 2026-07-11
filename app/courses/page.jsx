@@ -10,157 +10,115 @@ const CoursesPage = () => {
     // ========== NEW: GOVERNMENT PARTNERSHIPS & MOUs ==========
     {
       title: "MOU with RSLDC Under Project (2014-15)",
-      description: "",
-      icon: <FaHandshake className="text-emerald-600 text-2xl" />,
+      icon: <FaHandshake className="text-emerald-600 text-xl" />,
       type: "partnership",
-      category: "government",
-      hideTime: true,
-      hideBadge: true,
-      hideYear: true,
-      hidePartner: true
+      year: "2014-15",
+      partner: "RSLDC",
+      bgColor: "bg-emerald-50"
     },
     {
       title: "MOU with RSLDC Under Project (2015-16)",
-      description: "",
-      icon: <FaHandshake className="text-emerald-600 text-2xl" />,
+      icon: <FaHandshake className="text-emerald-600 text-xl" />,
       type: "partnership",
-      category: "government",
-      hideTime: true,
-      hideBadge: true,
-      hideYear: true,
-      hidePartner: true
+      year: "2015-16",
+      partner: "RSLDC",
+      bgColor: "bg-emerald-50"
     },
     {
       title: "MOU with RKCL Under Project (2017-18)",
-      description: "",
-      icon: <FaBuilding className="text-indigo-600 text-2xl" />,
+      icon: <FaBuilding className="text-indigo-600 text-xl" />,
       type: "partnership",
-      category: "government",
-      hideTime: true,
-      hideBadge: true,
-      hideYear: true,
-      hidePartner: true
+      year: "2017-18",
+      partner: "RKCL",
+      bgColor: "bg-indigo-50"
     },
     {
       title: "MOU with State PMKVY Rajasthan (2017-18)",
-      description: "",
-      icon: <FaUniversity className="text-red-600 text-2xl" />,
+      icon: <FaUniversity className="text-red-600 text-xl" />,
       type: "partnership",
-      category: "government",
-      hideTime: true,
-      hideBadge: true,
-      hideYear: true,
-      hidePartner: true
+      year: "2017-18",
+      partner: "PMKVY",
+      bgColor: "bg-red-50"
     },
     {
       title: "MOU with DDU-GKY Rajasthan (2018-19)",
-      description: "",
-      icon: <FaUsers className="text-orange-600 text-2xl" />,
+      icon: <FaUsers className="text-orange-600 text-xl" />,
       type: "partnership",
-      category: "government",
-      hideTime: true,
-      hideBadge: true,
-      hideYear: true,
-      hidePartner: true
+      year: "2018-19",
+      partner: "DDU-GKY",
+      bgColor: "bg-orange-50"
     },
     {
       title: "MOU with MMYKY in Rajasthan (2019-20)",
-      description: "",
-      icon: <FaBriefcase className="text-pink-600 text-2xl" />,
+      icon: <FaBriefcase className="text-pink-600 text-xl" />,
       type: "partnership",
-      category: "government",
-      hideTime: true,
-      hideBadge: true,
-      hideYear: true,
-      hidePartner: true
+      year: "2019-20",
+      partner: "MMYKY",
+      bgColor: "bg-pink-50"
     },
     {
       title: "MOU with RSLDC Under RSTP Project for Jail Inmates Training (2019-20)",
-      description: "",
-      icon: <FaAward className="text-purple-600 text-2xl" />,
+      icon: <FaAward className="text-purple-600 text-xl" />,
       type: "partnership",
-      category: "government",
-      hideTime: true,
-      hideBadge: true,
-      hideYear: true,
-      hidePartner: true
+      year: "2019-20",
+      partner: "RSLDC",
+      bgColor: "bg-purple-50"
     },
     {
       title: "Associated with TSSC (2018-19)",
-      description: "",
-      icon: <FaBuilding className="text-cyan-600 text-2xl" />,
+      icon: <FaBuilding className="text-cyan-600 text-xl" />,
       type: "partnership",
-      category: "corporate",
-      hideTime: true,
-      hideBadge: true,
-      hideYear: true,
-      hidePartner: true
+      year: "2018-19",
+      partner: "TSSC",
+      bgColor: "bg-cyan-50"
     },
     {
       title: "ESDM with TSSC (2018-19)",
-      description: "",
-      icon: <FaFileContract className="text-blue-600 text-2xl" />,
+      icon: <FaFileContract className="text-blue-600 text-xl" />,
       type: "partnership",
-      category: "corporate",
-      hideTime: true,
-      hideBadge: true,
-      hideYear: true,
-      hidePartner: true
+      year: "2018-19",
+      partner: "TSSC",
+      bgColor: "bg-blue-50"
     },
     {
       title: "RPL with TSSC (2018-19)",
-      description: "",
-      icon: <FaCertificate className="text-yellow-600 text-2xl" />,
+      icon: <FaCertificate className="text-yellow-600 text-xl" />,
       type: "partnership",
-      category: "corporate",
-      hideTime: true,
-      hideBadge: true,
-      hideYear: true,
-      hidePartner: true
+      year: "2018-19",
+      partner: "TSSC",
+      bgColor: "bg-yellow-50"
     },
     {
       title: "NULM with TSSC (2019-20)",
-      description: "",
-      icon: <FaUsers className="text-teal-600 text-2xl" />,
+      icon: <FaUsers className="text-teal-600 text-xl" />,
       type: "partnership",
-      category: "government",
-      hideTime: true,
-      hideBadge: true,
-      hideYear: true,
-      hidePartner: true
+      year: "2019-20",
+      partner: "TSSC",
+      bgColor: "bg-teal-50"
     },
     {
       title: "MOU with RSLDC Under I AM SHAKTI Project Funded by MCD Govt. Of Rajasthan (2020-21)",
-      description: "",
-      icon: <FaHandshake className="text-rose-600 text-2xl" />,
+      icon: <FaHandshake className="text-rose-600 text-xl" />,
       type: "partnership",
-      category: "government",
-      hideTime: true,
-      hideBadge: true,
-      hideYear: true,
-      hidePartner: true
+      year: "2020-21",
+      partner: "RSLDC",
+      bgColor: "bg-rose-50"
     },
     {
       title: "Sanctioned Under JJM RPL RSLDC Funded by PHED Department, Govt. Of Rajasthan (2020-21)",
-      description: "",
-      icon: <FaUniversity className="text-blue-700 text-2xl" />,
+      icon: <FaUniversity className="text-blue-700 text-xl" />,
       type: "partnership",
-      category: "government",
-      hideTime: true,
-      hideBadge: true,
-      hideYear: true,
-      hidePartner: true
+      year: "2020-21",
+      partner: "RSLDC",
+      bgColor: "bg-blue-50"
     },
     {
       title: "Sanctioned RPL Under CSSM-PMKVY in Rajasthan (2020-21)",
-      description: "",
-      icon: <FaAward className="text-green-700 text-2xl" />,
+      icon: <FaAward className="text-green-700 text-xl" />,
       type: "partnership",
-      category: "government",
-      hideTime: true,
-      hideBadge: true,
-      hideYear: true,
-      hidePartner: true
+      year: "2020-21",
+      partner: "PMKVY",
+      bgColor: "bg-green-50"
     },
     
     // ========== EXISTING TRAINING COURSES ==========
@@ -250,43 +208,59 @@ const CoursesPage = () => {
               className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
             >
               <div className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className={`p-3 rounded-full mr-4 ${
-                    course.type === 'pre-license' ? 'bg-blue-50' :
-                    course.type === 'renewal' ? 'bg-green-50' :
-                    course.type === 'posp' ? 'bg-purple-50' :
-                    'bg-emerald-50'
-                  }`}>
-                    {course.icon}
-                  </div>
-                  {/* Hide badge for partnerships */}
-                  {!course.hideBadge && (
-                    <span className={`inline-flex px-3 py-1 rounded-full text-xs font-semibold ${
-                      course.type === 'pre-license' ? 'bg-blue-100 text-blue-800' :
-                      course.type === 'renewal' ? 'bg-green-100 text-green-800' :
-                      course.type === 'posp' ? 'bg-purple-100 text-purple-800' :
-                      'bg-emerald-100 text-emerald-800'
-                    }`}>
-                      {course.type === 'pre-license' ? 'New License' :
-                       course.type === 'renewal' ? 'Renewal' :
-                       course.type === 'posp' ? 'POSP' :
-                       ''}
-                    </span>
-                  )}
-                </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{course.title}</h3>
-                {/* Hide description for partnerships */}
-                {course.description && !course.hideBadge && (
-                  <p className="text-gray-600 mb-4">{course.description}</p>
-                )}
-                {/* Hide time section for partnerships */}
-                {!course.hideTime && course.type !== 'partnership' && (
-                  <div className="flex items-center justify-between">
-                    <span className="flex items-center text-sm text-gray-500">
-                      <FaClock className="mr-1" />
-                      {course.title.includes('15') ? '15 hours' : '25 hours'}
-                    </span>
-                  </div>
+                {/* For Partnership Courses - New Design */}
+                {course.type === 'partnership' ? (
+                  <>
+                    <div className="flex items-center mb-4">
+                      <div className={`p-3 rounded-full ${course.bgColor || 'bg-emerald-50'} mr-4`}>
+                        {course.icon}
+                      </div>
+                      <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded-full">
+                        {course.year}
+                      </span>
+                    </div>
+                    <h3 className="text-lg font-bold text-gray-800 mb-2 leading-tight">{course.title}</h3>
+                    <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                      <span className="flex items-center text-sm text-gray-500">
+                        <FaHandshake className="mr-1 text-emerald-600" /> {course.partner}
+                      </span>
+                      <span className="text-xs font-medium text-gray-600 bg-gray-100 px-2 py-1 rounded">
+                        {course.partner}
+                      </span>
+                    </div>
+                  </>
+                ) : (
+                  /* For Training Courses - Original Design */
+                  <>
+                    <div className="flex items-center mb-4">
+                      <div className={`p-3 rounded-full mr-4 ${
+                        course.type === 'pre-license' ? 'bg-blue-50' :
+                        course.type === 'renewal' ? 'bg-green-50' :
+                        'bg-purple-50'
+                      }`}>
+                        {course.icon}
+                      </div>
+                      <span className={`inline-flex px-3 py-1 rounded-full text-xs font-semibold ${
+                        course.type === 'pre-license' ? 'bg-blue-100 text-blue-800' :
+                        course.type === 'renewal' ? 'bg-green-100 text-green-800' :
+                        'bg-purple-100 text-purple-800'
+                      }`}>
+                        {course.type === 'pre-license' ? 'New License' :
+                         course.type === 'renewal' ? 'Renewal' :
+                         'POSP'}
+                      </span>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-800 mb-2">{course.title}</h3>
+                    {course.description && (
+                      <p className="text-gray-600 mb-4">{course.description}</p>
+                    )}
+                    <div className="flex items-center justify-between">
+                      <span className="flex items-center text-sm text-gray-500">
+                        <FaClock className="mr-1" />
+                        {course.title.includes('15') ? '15 hours' : '25 hours'}
+                      </span>
+                    </div>
+                  </>
                 )}
               </div>
             </motion.div>
