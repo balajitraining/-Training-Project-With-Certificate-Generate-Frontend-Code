@@ -123,11 +123,11 @@ const CoursesPage = () => {
     
     // ========== EXISTING TRAINING COURSES ==========
 
-    <motion.div variants={itemVariants} className="text-center mb-12">
+
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Courses
           </h2>
-        </motion.div>
+       
     {
       title: "Pre-License Training - General Insurance (25 hrs)",
       description: "25 Hrs Training Programme is a mandatory Pre-Licensing training programme for those seeking license for the first time. Covers different aspects of General Insurance & the business as a whole.",
