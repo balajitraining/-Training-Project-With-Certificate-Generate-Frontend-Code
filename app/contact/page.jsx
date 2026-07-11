@@ -189,7 +189,7 @@ const ContactPage = () => {
                   <MapPin size={20} />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-gray-800 mb-1">Head Office Address</h3>
+                  <h3 className="text-lg font-medium text-gray-800 mb-1">Registered Address</h3>
                   <p className="text-gray-600">
                     6 Z, Metro City Padampur Rd,<br />
                     Sri Ganganagar<br />
