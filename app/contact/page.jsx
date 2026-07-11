@@ -184,6 +184,24 @@ const ContactPage = () => {
                 </div>
               </div>
 
+
+              <div className="space-y-6">
+              <div className="flex items-start gap-4 p-4 hover:bg-gray-50 rounded-lg transition">
+                <div className="p-3 bg-blue-100 rounded-full text-blue-600">
+                  <MapPin size={20} />
+                </div>
+                <div>
+                  <h3 className="text-lg font-medium text-gray-800 mb-1">Head Office Address</h3>
+                  <p className="text-gray-600">
+                    6 Z, Metro City Padampur Rd,<br />
+                    Sri Ganganagar<br />
+                    Rajasthan 335001
+                  </p>
+                </div>
+              </div>
+
+              
+
               <div className="flex items-start gap-4 p-4 hover:bg-gray-50 rounded-lg transition">
                 <div className="p-3 bg-blue-100 rounded-full text-blue-600">
                   <Phone size={20} />
