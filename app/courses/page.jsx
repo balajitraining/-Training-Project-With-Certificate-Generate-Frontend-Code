@@ -1,11 +1,12 @@
 'use client'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { FaUserTie, FaClock, FaCertificate, FaArrowRight } from 'react-icons/fa'
+import { FaUserTie, FaClock, FaCertificate, FaArrowRight, FaHandshake, FaBuilding, FaUniversity, FaUsers, FaBriefcase, FaAward, FaFileContract } from 'react-icons/fa'
 
 
 const CoursesPage = () => {
   const courses = [
+    // ========== EXISTING TRAINING COURSES ==========
     {
       title: "Pre-License Training - General Insurance (25 hrs)",
       description: "25 Hrs Training Programme is a mandatory Pre-Licensing training programme for those seeking license for the first time. Covers different aspects of General Insurance & the business as a whole.",
@@ -35,11 +36,111 @@ const CoursesPage = () => {
       category: "health"
     },
     {
-      title: "POSP Training 25 hrs)",
+      title: "POSP Training (25 hrs)",
       description: "Provides basic knowledge of Life, General and Health insurance to work as an insurance sales person.",
       icon: <FaClock className="text-purple-600 text-2xl" />,
       type: "posp",
       category: "all"
+    },
+
+    // ========== NEW: GOVERNMENT PARTNERSHIPS & MOUs ==========
+    {
+      title: "MOU with RSLDC Under Project (2014-15)",
+      description: "",
+      icon: <FaHandshake className="text-emerald-600 text-2xl" />,
+      type: "partnership",
+      category: "government"
+    },
+    {
+      title: "MOU with RSLDC Under Project (2015-16)",
+      description: "",
+      icon: <FaHandshake className="text-emerald-600 text-2xl" />,
+      type: "partnership",
+      category: "government"
+    },
+    {
+      title: "MOU with RKCL Under Project (2017-18)",
+      description: "",
+      icon: <FaBuilding className="text-indigo-600 text-2xl" />,
+      type: "partnership",
+      category: "government"
+    },
+    {
+      title: "MOU with State PMKVY Rajasthan (2017-18)",
+      description: "",
+      icon: <FaUniversity className="text-red-600 text-2xl" />,
+      type: "partnership",
+      category: "government"
+    },
+    {
+      title: "MOU with DDU-GKY Rajasthan (2018-19)",
+      description: "",
+      icon: <FaUsers className="text-orange-600 text-2xl" />,
+      type: "partnership",
+      category: "government"
+    },
+    {
+      title: "MOU with MMYKY in Rajasthan (2019-20)",
+      description: "",
+      icon: <FaBriefcase className="text-pink-600 text-2xl" />,
+      type: "partnership",
+      category: "government"
+    },
+    {
+      title: "MOU with RSLDC Under RSTP Project for Jail Inmates Training (2019-20)",
+      description: "",
+      icon: <FaAward className="text-purple-600 text-2xl" />,
+      type: "partnership",
+      category: "government"
+    },
+    {
+      title: "Associated with TSSC (2018-19)",
+      description: "",
+      icon: <FaBuilding className="text-cyan-600 text-2xl" />,
+      type: "partnership",
+      category: "corporate"
+    },
+    {
+      title: "ESDM with TSSC (2018-19)",
+      description: "",
+      icon: <FaFileContract className="text-blue-600 text-2xl" />,
+      type: "partnership",
+      category: "corporate"
+    },
+    {
+      title: "RPL with TSSC (2018-19)",
+      description: "",
+      icon: <FaCertificate className="text-yellow-600 text-2xl" />,
+      type: "partnership",
+      category: "corporate"
+    },
+    {
+      title: "NULM with TSSC (2019-20)",
+      description: "",
+      icon: <FaUsers className="text-teal-600 text-2xl" />,
+      type: "partnership",
+      category: "government"
+    },
+    {
+      title: "MOU with RSLDC Under I AM SHAKTI Project Funded by MCD Govt. Of Rajasthan (2020-21)",
+      description: "",
+      icon: <FaHandshake className="text-rose-600 text-2xl" />,
+      type: "partnership",
+      category: "government"
+    },
+    {
+      title: "Sanctioned Under JJM RPL RSLDC Funded by PHED Department, Govt. Of Rajasthan (2020-21)",
+      description: "",
+      icon: <FaUniversity className="text-blue-700 text-2xl" />,
+      type: "partnership",
+      category: "government"
+    },
+    {
+      title: "Sanctioned RPL Under CSSM-PMKVY in Rajasthan (2020-21)",
+      description: "",
+      icon: <FaAward className="text-green-700 text-2xl" />,
+      type: "partnership",
+      category: "government"
     }
   ]
 
@@ -75,10 +176,10 @@ const CoursesPage = () => {
         {/* Header */}
         <motion.div variants={itemVariants} className="text-center mb-12">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Insurance Training Programs
+            Insurance Training Programs & Partnerships
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Comprehensive training programs for insurance professionals at all career stages
+            Comprehensive training programs and strategic partnerships with government & corporate organizations
           </p>
         </motion.div>
 
@@ -93,26 +194,36 @@ const CoursesPage = () => {
             >
               <div className="p-6">
                 <div className="flex items-center mb-4">
-                  <div className="p-3 rounded-full bg-gray-100 mr-4">
+                  <div className={`p-3 rounded-full mr-4 ${
+                    course.type === 'pre-license' ? 'bg-blue-50' :
+                    course.type === 'renewal' ? 'bg-green-50' :
+                    course.type === 'posp' ? 'bg-purple-50' :
+                    'bg-emerald-50'
+                  }`}>
                     {course.icon}
                   </div>
                   <span className={`inline-flex px-3 py-1 rounded-full text-xs font-semibold ${
-                    course.type === 'pre-license' 
-                      ? 'bg-blue-100 text-blue-800' 
-                      : course.type === 'renewal' 
-                        ? 'bg-green-100 text-green-800' 
-                        : 'bg-purple-100 text-purple-800'
+                    course.type === 'pre-license' ? 'bg-blue-100 text-blue-800' :
+                    course.type === 'renewal' ? 'bg-green-100 text-green-800' :
+                    course.type === 'posp' ? 'bg-purple-100 text-purple-800' :
+                    'bg-emerald-100 text-emerald-800'
                   }`}>
-                    {course.type === 'pre-license' ? 'New License' : 
-                     course.type === 'renewal' ? 'Renewal' : 'POSP'}
+                    {course.type === 'pre-license' ? 'New License' :
+                     course.type === 'renewal' ? 'Renewal' :
+                     course.type === 'posp' ? 'POSP' :
+                     'Partnership'}
                   </span>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">{course.title}</h3>
-                <p className="text-gray-600 mb-4">{course.description}</p>
+                {course.description && (
+                  <p className="text-gray-600 mb-4">{course.description}</p>
+                )}
                 <div className="flex items-center justify-between">
                   <span className="flex items-center text-sm text-gray-500">
                     <FaClock className="mr-1" />
-                    {course.title.includes('15') ? '15 hours' : '25 hours'}
+                    {course.title.includes('15') ? '15 hours' : 
+                     course.type === 'partnership' ? 'Partnership' : 
+                     '25 hours'}
                   </span>
                 </div>
               </div>
@@ -128,7 +239,7 @@ const CoursesPage = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to start your insurance career?</h2>
             <p className="text-lg mb-6 opacity-90">
-              Our expert-led training programs will prepare you for success in the insurance industry.
+              Our expert-led training programs and strong government partnerships will prepare you for success in the insurance industry.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link href='/contact' className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center">
